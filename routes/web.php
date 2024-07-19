@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\CategoryController;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,6 +28,9 @@ Route::middleware([
         return view('dashboard');
     })->name('dashboard');
 
-
+// Products route
 Route::resource('products', ProductController::class);
+
+// Categories route
+Route::resource('categories', CategoryController::class);
 });

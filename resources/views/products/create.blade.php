@@ -8,7 +8,7 @@
 
                 <section class="p-5">
                     <h1 class="text-white text-3xl font-bold m-2">
-                        Crear nuevo producto
+                        {{__('Crear nuevo producto')}}
                     </h1>
                     <form>
                         <div class="mb-6">
@@ -85,7 +85,7 @@
     <div id="image-modal" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full ">
         <div class="relative p-4 w-full max-w-2xl max-h-full">
             <!-- Modal content -->
-            <div class="relative bg-white rounded-lg shadow dark:bg-gray-700 shadow-lg shadow-black border-black">
+            <div class="relative bg-white rounded-lg dark:bg-gray-700 shadow-lg shadow-black border-black">
                 <!-- Modal header -->
                 <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
                     <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
@@ -95,7 +95,7 @@
                         <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
                         </svg>
-                        <span class="sr-only">Cerrar modal</span>
+                        <span class="sr-only">{{__('Cerrar modal')}}</span>
                     </button>
                 </div>
                 <!-- Modal body -->
