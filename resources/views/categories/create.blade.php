@@ -10,7 +10,8 @@
                     <h1 class="text-white text-3xl font-bold m-2">
                         {{__('Crear nuevo categoria')}}
                     </h1>
-                    <form>
+                    <form action="{{route('categories.store')}}" method="post">
+                        @csrf
                         <div class="mb-6">
                             <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
                                 {{ __('Nombre') }}
