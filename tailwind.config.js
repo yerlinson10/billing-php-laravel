@@ -9,8 +9,11 @@ export default {
         './vendor/laravel/jetstream/**/*.blade.php',
         './storage/framework/views/*.php',
         './resources/views/**/*.blade.php',
+        "./resources/**/*.js",
+        "./resources/**/*.vue",
+        "./node_modules/flowbite/**/*.js"
     ],
-    // darkMode: 'class',
+    darkMode: 'class',
     theme: {
         extend: {
             colors: {
@@ -23,5 +26,5 @@ export default {
         },
     },
 
-    plugins: [forms, typography],
+    plugins: [forms, typography, require('flowbite/plugin')],
 };
