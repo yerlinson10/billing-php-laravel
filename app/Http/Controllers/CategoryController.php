@@ -33,13 +33,17 @@ class CategoryController extends Controller
     {
         $request->validate([
             'name' => 'required|unique:categories|max:255',
-        ]);;
+        ]);
+        dd(';');
         $category = new Category;
         $category->user_id = Auth::id();
         $category->name = $request->name;
         $category->save();
 
 
+        if(isset($request->viewReturn)){
+            return redirect()->back();
+        }
         return redirect()->route('categories.index')->with('success', 'Category created successfully.');
     }
 
